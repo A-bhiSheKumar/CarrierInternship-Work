@@ -1,0 +1,324 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  
+  .hero-section {
+    position: relative;
+  }
+  
+  .imgDiv{
+    margin-top: 200px;
+  }
+  
+  .hero-section img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 95%; 
+    height: auto; 
+    object-fit: cover; 
+    margin-top: 20px; 
+    z-index: -1;
+  }
+  
+  .upMe{
+  
+    margin-bottom: 220px;
+  }
+  
+  
+  
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px;
+    justify-content: flex-start;
+  }
+  
+  .card {
+    width: 74%; 
+    height: 220px; 
+    background-color: #fff;
+  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .perks{
+    font-size: 55px;
+    font-family: serif;
+    font-weight: 500;
+    font-size: 70px;
+    margin-top: 40px;
+  }
+  .perksContent{
+    margin-top: 11px;
+    
+  }
+  
+ 
+  .custom-card-container {
+    position: relative;
+  
+  }
+  
+  .scroll-content {
+    padding-right: 20px; 
+  
+  }
+  
+  .scroll-arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .custom-width{
+    max-width: 2000px;
+  
+  }
+  
+  
+  /* Gallery */
+  
+  .gallery {
+      display: flex;
+      padding: 2px;
+      transition: .3s;
+  
+      &__column {
+          display: flex;
+          flex-direction: column;
+          width: 25%;
+      }
+      
+      &__thumb {
+          position: relative;
+      }
+      
+      &__image {
+          display: block;
+          width: 100%;
+          transition: .3s;
+          
+          &:hover {
+              transform: scale(1.1);
+          }
+      }
+      
+  }
+  
+  
+  /* jbdsiuiuhoisaho */
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards in each column */
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the start of the flex container */
+  }
+  
+  .contact {
+    width: 72%; /* Each card takes up the full width of the column */
+    height: 235px; /* Square shape for the first two cards */
+    background-color: #fff;
+    border: 2px solid #000; /* Black border */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact:last-child {
+    width: 163%; /* Full width for the last card */
+    height: 200px; /* Rectangle shape for the last card */
+  }
+  
+  
+  
+  
+  /* form */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .form-control1 {
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #007bff; /* Underline effect color */
+    padding: 5px 0;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s ease;
+  }
+  .form-control2 {
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #007bff; /* Underline effect color */
+    padding: 5px 0;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  .form-control3 {
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #007bff; /* Underline effect color */
+    padding: 5px 0;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s ease;
+  }
+  .form-control4 {
+    width: 80%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #007bff; /* Underline effect color */
+    padding: 5px 0;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-bottom-color: #ff6600; /* Change color on focus */
+  }
+  
+  /*  */
+  
+  .select-group {
+    margin-bottom: 20px;
+  }
+  
+  .custom-list {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 15px;
+    display: flex;
+    gap: 80px;
+  }
+  
+  .option {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .option::before {
+    content: '\2022'; /* Unicode character for bullet point */
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0a0a0a;
+  }
+  
+  .option.selected {
+    font-weight: bold;
+  }
+  
+  #subject {
+    display: none;
+  }
+  
+  
+  
+  .swiper-button-next, .swiper-button-prev {
+    top: 35%;
+  }
+  
+  .swiper-button-next {
+    width: 110px;
+    height: 110px;
+    right: -2.25%;
+  }
+  .swiper-button-next::after {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/next-button.svg') !important;
+    content: 'sa';
+  }
+  
+  .swiper-button-prev {
+    width: 110px;
+    height: 110px;
+    left: -2.25%;
+  }
+  
+  .swiper-button-prev::after {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/prev-button.svg') !important;
+    content: 'sa';
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #3DA9FC;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px){
+    .swiper-button-next {
+      right: -7%;
+    }
+  
+    .swiper-button-prev {
+      left: -7%;
+    }
+  }
+  
+  @media (max-width: 1023px){
+    .swiper-button-next {
+      right: -4%;
+    }
+  
+    .swiper-button-prev {
+      left: -4%;
+    }
+  }
+  
+  @media (max-width: 1279px){
+    .swiper-button-next {
+      right: -3%;
+    }
+  
+    .swiper-button-prev {
+      left: -3%;
+    }
+  }
